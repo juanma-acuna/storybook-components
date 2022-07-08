@@ -10,6 +10,7 @@ export default {
     color: { control: "select" },
     fontColor: { control: "color" },
     backgroundColor: { control: "color" },
+    padding: { control: "text" },
   },
 } as ComponentMeta<typeof MyLabel>;
 
@@ -56,4 +57,14 @@ CustomFontColor.args = {
   allCaps: false,
   fontColor: "#5517ac",
   backgroundColor: "white",
+};
+
+export const CustomPadding = Template.bind({});
+CustomPadding.args = {
+  label: "MyLabel",
+  size: "normal",
+  allCaps: false,
+  fontColor: "#5517ac",
+  backgroundColor: "white",
+  padding: "20px",
 };
